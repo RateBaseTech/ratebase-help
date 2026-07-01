@@ -6,7 +6,7 @@
   .card{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 4px 16px rgba(37,99,235,.06)}
   h2{font-size:17px;color:#2563EB;margin:0 0 8px}
   .barcode{text-align:center;padding:20px;background:#fff;border-radius:12px}
-  .barcode img{width:100%;max-width:420px;image-rendering:pixelated}
+  .barcode img{width:100%;max-width:460px;image-rendering:pixelated}
   code{background:#EFF6FF;border-radius:6px;padding:2px 8px;font-size:16px;font-weight:700;color:#1D4ED8}
   li{margin:6px 0}.muted{color:#64748B;font-size:14px}
 </style></head><body><div class="wrap">
@@ -16,21 +16,21 @@
     <p>RateBase scans <strong>product barcodes</strong> (EAN/UPC) to show reviews and prices. It does <strong>not</strong> use QR codes or AR markers. You can test the feature two ways:</p>
   </div>
   <div class="card">
-    <h2>Option 1 — Type it (no camera needed)</h2>
-    <p>On the Home screen, type this barcode number in the search bar and press Search:</p>
-    <p style="text-align:center"><code>3017620422003</code></p>
-    <p class="muted">→ returns the product “Nutella (Ferrero)”. You can also type product names such as <code>Nutella</code>, <code>Coca-Cola</code> or <code>Dove</code>.</p>
+    <h2>Option 1 — Scan the barcode (camera)</h2>
+    <p>Tap the camera button next to the search bar, then point the device camera at this barcode (shown on another screen, or printed):</p>
+    <div class="barcode"><img src="demo-barcode.png" alt="Demo EAN-13 barcode 3017620422003"></div>
+    <p class="muted">&rarr; opens the product page for &ldquo;Nutella&rdquo;, with the Overview / Prices / Reviews tabs.</p>
   </div>
   <div class="card">
-    <h2>Option 2 — Scan it with the camera</h2>
-    <p>Tap the camera button next to the search bar, then point the device camera at this barcode (displayed on another screen or printed):</p>
-    <div class="barcode"><img src="demo-barcode.png" alt="Demo EAN-13 barcode 3017620422003"></div>
-    <p class="muted">→ opens the product page for “Nutella”, with the Overview / Prices / Reviews tabs.</p>
+    <h2>Option 2 — Search by name (no camera)</h2>
+    <p>On the Home screen, type a product <strong>name</strong> in the search bar and press Search, for example:</p>
+    <p style="text-align:center"><code>Nutella</code>&nbsp;&nbsp;<code>Coca-Cola</code>&nbsp;&nbsp;<code>Dove</code></p>
+    <p class="muted">&rarr; returns matching products you can open. (Search accepts product names or a barcode number.)</p>
   </div>
   <div class="card">
     <h2>Notes</h2>
     <ul>
-      <li>The app also works fully <strong>without an account</strong> (“Continue without account”).</li>
+      <li>The app also works fully <strong>without an account</strong> (&ldquo;Continue without account&rdquo;).</li>
       <li>A demo account is provided in the App Review Information notes for account features (favourites, reviews).</li>
     </ul>
     <p class="muted">Contact: ratebase@outlook.com</p>
