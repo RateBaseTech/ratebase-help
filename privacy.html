@@ -1,52 +1,197 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RateBase — Privacy Policy</title><style>
-  :root { --blue:#2563EB; --teal:#06B6D4; --green:#22C55E; --ink:#0F172A; --muted:#64748B; --bg:#F5F7FA; --card:#fff; --border:#E2E8F0; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
-  .wrap { max-width:720px; margin:0 auto; padding:32px 22px 64px; }
-  header { text-align:center; margin-bottom:32px; }
-  .logo { font-size:30px; font-weight:800; letter-spacing:-1px; }
-  .logo .b { color:var(--green); } .logo .r { color:var(--blue); }
-  .tag { color:var(--muted); font-size:15px; margin-top:4px; }
-  .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px 24px; margin:16px 0; box-shadow:0 4px 16px rgba(37,99,235,.06); }
-  h1 { font-size:24px; margin:0 0 6px; }
-  h2 { font-size:18px; margin:22px 0 8px; color:var(--blue); }
-  h3 { font-size:15px; margin:16px 0 4px; }
-  p, li { font-size:15px; color:#334155; }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RateBase — Politique de confidentialité</title>
+<meta name="description" content="Politique de confidentialité de RateBase : ce que nous collectons, comment nous l’utilisons, et tes droits.">
+<style>
+  :root {
+    --blue:#2563EB; --teal:#06B6D4; --green:#22C55E; --green2:#16A34A;
+    --ink:#0F172A; --mid:#334155; --muted:#64748B; --bg:#F5F7FA; --card:#fff; --border:#E2E8F0;
+    --grad:linear-gradient(90deg,#1D4ED8,#2563EB,#06B6D4,#22C55E);
+  }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+  .wrap { max-width:780px; margin:0 auto; padding:0 22px; }
   a { color:var(--blue); text-decoration:none; font-weight:600; }
   a:hover { text-decoration:underline; }
-  .btn { display:inline-block; background:var(--blue); color:#fff; padding:12px 22px; border-radius:12px; font-weight:700; margin-top:8px; }
-  .muted { color:var(--muted); font-size:13px; }
-  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:32px; }
-</style></head><body><div class="wrap"><header><div class="logo"><span class="r">Rate</span><span class="b">Base</span></div><div class="tag">All reviews. All prices.</div></header>
-<div class="card">
-  <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: June 2026</p>
-  <p>RateBase (“we”, “us”) is committed to protecting your privacy. This policy explains what we collect and how we use it.</p>
-  <h2>Information we collect</h2>
-  <ul>
-    <li><strong>Account:</strong> email address and (optionally) a display name when you sign up or use Sign in with Apple or Google.</li>
-    <li><strong>Camera:</strong> used only to scan barcodes. Images are not stored or transmitted.</li>
-    <li><strong>Location:</strong> used only when you open the Map to find stores near you. It is not stored on our servers.</li>
-    <li><strong>Photos:</strong> when you choose a profile picture or attach a photo to a review, only the photos you pick are uploaded.</li>
-    <li><strong>Content you create:</strong> reviews, favourites and products you add are stored in your account.</li>
-  </ul>
-  <h2>How we use your information</h2>
-  <ul>
-    <li>To authenticate your account and sync your data across devices.</li>
-    <li>To show your reviews and favourites.</li>
-    <li>We do <strong>not</strong> sell or rent your personal information to third parties, and we do <strong>not</strong> use it for advertising profiling.</li>
-  </ul>
-  <h2>Third-party services</h2>
-  <ul>
-    <li><strong>Supabase</strong> — authentication and encrypted data storage.</li>
-    <li><strong>Apple &amp; Google Sign-In</strong> — optional login.</li>
-    <li><strong>Open Food Facts / Open Beauty Facts / Open Products Facts, UPC Item DB, Icecat, Datakick</strong> — public product data.</li>
-    <li><strong>Amazon, Walmart, Best Buy, Costco</strong> — price links (some are affiliate links).</li>
-  </ul>
-  <h2>Data retention &amp; deletion</h2>
-  <p>You can use the app without an account. If you create one, you can delete your account and all associated data at any time from <strong>Profile → Delete account</strong>, or by emailing <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a>.</p>
-  <h2>Children</h2>
-  <p>RateBase is not directed to children under 13. We do not knowingly collect information from children under 13.</p>
-  <h2>Changes &amp; contact</h2>
-  <p>We may update this policy from time to time. Questions? Contact us at <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a>.</p>
-</div><footer>© 2026 RateBase · <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a></footer></div></body></html>
+
+  nav { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.82); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
+  .nav-in { display:flex; align-items:center; justify-content:space-between; height:60px; }
+  .wordmark { font-size:22px; font-weight:800; letter-spacing:-.8px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .nav-links { display:flex; align-items:center; gap:20px; font-size:14px; font-weight:600; }
+  .nav-links a { color:var(--mid); text-decoration:none; }
+  .nav-links a:hover { color:var(--blue); }
+  .lang-btn { border:1px solid var(--border); background:#fff; border-radius:999px; padding:5px 13px; font-size:13px; font-weight:700; color:var(--mid); cursor:pointer; }
+  .lang-btn:hover { border-color:var(--blue); color:var(--blue); }
+
+  header.hero { position:relative; overflow:hidden; padding:56px 0 30px; text-align:center; }
+  header.hero::before { content:""; position:absolute; inset:-60% -20% auto; height:160%;
+    background:radial-gradient(500px 260px at 30% 30%, rgba(37,99,235,.12), transparent 65%),
+               radial-gradient(460px 260px at 72% 26%, rgba(34,197,94,.10), transparent 65%);
+    pointer-events:none; }
+  h1 { position:relative; font-size:clamp(28px,4.5vw,38px); letter-spacing:-1px; }
+  h1 .g { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .updated { position:relative; display:inline-flex; align-items:center; gap:7px; background:#fff; border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600; color:var(--muted); margin-top:14px; box-shadow:0 2px 10px rgba(15,23,42,.05); }
+  .updated .dot { width:8px; height:8px; border-radius:50%; background:var(--green); }
+
+  .tldr { background:linear-gradient(120deg,#2563EB0D,#06B6D40D,#22C55E0D); border:1px solid #2563EB2A; border-radius:20px; padding:24px 26px; margin:26px 0 8px; }
+  .tldr h2 { font-size:16px; margin-bottom:10px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; display:inline-block; }
+  .tldr ul { padding-left:0; list-style:none; }
+  .tldr li { font-size:14.5px; color:var(--mid); padding:4px 0 4px 26px; position:relative; }
+  .tldr li::before { content:"✓"; position:absolute; left:2px; color:var(--green2); font-weight:800; }
+
+  .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:24px 26px; margin:16px 0; box-shadow:0 4px 16px rgba(15,23,42,.05); }
+  .card h2 { display:flex; align-items:center; gap:11px; font-size:18px; margin-bottom:12px; }
+  .card h2 .ic { width:34px; height:34px; border-radius:11px; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+  p, li { font-size:15px; color:var(--mid); }
+  ul { padding-left:22px; }
+  li { margin:6px 0; }
+  li strong, p strong { color:var(--ink); }
+
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:36px 0 46px; }
+  footer .links { margin-bottom:8px; }
+  footer .links a { margin:0 10px; }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-in">
+  <a href="index.html" style="text-decoration:none"><span class="wordmark">RateBase</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">Accueil</a>
+    <a href="index.html#support" data-i18n="nav_support">Support</a>
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1><span data-i18n="h1a">Politique de</span> <span class="g" data-i18n="h1b">confidentialité</span></h1>
+  <span class="updated"><span class="dot"></span><span data-i18n="updated">Dernière mise à jour : juillet 2026</span></span>
+</div></header>
+
+<div class="wrap">
+
+  <div class="tldr">
+    <h2 data-i18n="tldr_t">L’essentiel en 30 secondes</h2>
+    <ul>
+      <li data-i18n="tldr1">On ne vend ni ne loue jamais tes données personnelles.</li>
+      <li data-i18n="tldr2">Pas de profilage publicitaire — aucune pub ciblée.</li>
+      <li data-i18n="tldr3">La caméra sert uniquement à lire les codes-barres; aucune image n’est enregistrée.</li>
+      <li data-i18n="tldr4">Tu peux utiliser l’app sans compte, et supprimer ton compte (et tout ce qui va avec) en un tap.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#2563EB14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M12 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span><span data-i18n="s1t">Ce que nous collectons</span></h2>
+    <ul>
+      <li data-i18n="s1a"><strong>Compte :</strong> ton adresse courriel et, si tu veux, un nom d’affichage — à l’inscription ou via Sign in with Apple / Google.</li>
+      <li data-i18n="s1b"><strong>Caméra :</strong> utilisée uniquement pour scanner les codes-barres. Les images ne sont ni enregistrées ni transmises.</li>
+      <li data-i18n="s1c"><strong>Localisation :</strong> utilisée seulement quand tu touches « Magasins proches » sur une fiche produit, pour ouvrir la recherche autour de toi. Jamais stockée sur nos serveurs.</li>
+      <li data-i18n="s1d"><strong>Photos :</strong> seules les photos que tu choisis (photo de profil, photo jointe à un avis) sont téléversées.</li>
+      <li data-i18n="s1e"><strong>Notifications :</strong> si tu les actives, un jeton d’appareil est enregistré pour pouvoir te les livrer. Tu peux les désactiver n’importe quand dans Profil → Notifications.</li>
+      <li data-i18n="s1f"><strong>Contenu que tu crées :</strong> tes avis, favoris, prix partagés et produits ajoutés sont conservés dans ton compte.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#06B6D414"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span data-i18n="s2t">Comment nous l’utilisons</span></h2>
+    <ul>
+      <li data-i18n="s2a">Pour authentifier ton compte et synchroniser tes données entre tes appareils.</li>
+      <li data-i18n="s2b">Pour afficher tes avis, tes favoris et tes contributions à la communauté.</li>
+      <li data-i18n="s2c">Nous ne <strong>vendons pas</strong> et ne louons pas tes renseignements personnels, et nous ne faisons <strong>aucun profilage publicitaire</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#22C55E14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span><span data-i18n="s3t">Services tiers</span></h2>
+    <ul>
+      <li data-i18n="s3a"><strong>Supabase</strong> — authentification et stockage chiffré des données.</li>
+      <li data-i18n="s3b"><strong>Apple &amp; Google Sign-In</strong> — connexion optionnelle.</li>
+      <li data-i18n="s3c"><strong>Open Food Facts / Open Beauty Facts / Open Products Facts, UPC Item DB, Icecat, Datakick</strong> — données produits publiques.</li>
+      <li data-i18n="s3d"><strong>Anthropic (Claude)</strong> — alimente l’assistant IA : les questions que tu poses sur un produit sont traitées par ce service, sans être liées à ton identité.</li>
+      <li data-i18n="s3e"><strong>Amazon, Walmart, Best Buy, Costco</strong> — liens vers les prix (certains sont des liens affiliés : tu paies le même prix, RateBase peut toucher une petite commission).</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#F9731614"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M19 6l-.8 14a2 2 0 0 1-2 1.9H7.8a2 2 0 0 1-2-1.9L5 6M10 11v6M14 11v6"/></svg></span><span data-i18n="s4t">Conservation et suppression</span></h2>
+    <p data-i18n="s4p">Tu peux utiliser l’app sans compte. Si tu en crées un, tu peux supprimer ton compte et toutes les données associées à tout moment via <strong>Profil → Supprimer le compte</strong>, ou en nous écrivant à <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a>. La suppression est définitive.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#7C3AED14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M12 3a7 7 0 0 1 7 7c0 2.4-1.2 4.5-3 5.7V18a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2.3c-1.8-1.2-3-3.3-3-5.7a7 7 0 0 1 7-7z"/></svg></span><span data-i18n="s5t">Enfants</span></h2>
+    <p data-i18n="s5p">RateBase ne s’adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de renseignements les concernant.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#2563EB14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z"/></svg></span><span data-i18n="s6t">Changements et contact</span></h2>
+    <p data-i18n="s6p">Cette politique peut être mise à jour de temps à autre; la date en haut de page indique la dernière révision. Des questions? Écris-nous à <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a> — réponse en 24 à 48 heures.</p>
+  </div>
+
+</div>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="index.html" data-i18n="ft_home">Accueil</a>
+    <a href="index.html#support" data-i18n="ft_support">Support</a>
+    <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a>
+  </div>
+  <div>© 2026 RateBase</div>
+</div></footer>
+
+<script>
+const I18N = {
+  en: {
+    nav_home:"Home", nav_support:"Support",
+    h1a:"Privacy", h1b:"Policy",
+    updated:"Last updated: July 2026",
+    tldr_t:"The 30-second summary",
+    tldr1:"We never sell or rent your personal data.",
+    tldr2:"No ad profiling — no targeted advertising.",
+    tldr3:"The camera is used only to read barcodes; no images are saved.",
+    tldr4:"You can use the app without an account, and delete your account (and everything with it) in one tap.",
+    s1t:"What we collect",
+    s1a:"<strong>Account:</strong> your email address and, optionally, a display name — at sign-up or via Sign in with Apple / Google.",
+    s1b:"<strong>Camera:</strong> used only to scan barcodes. Images are never stored or transmitted.",
+    s1c:"<strong>Location:</strong> used only when you tap “Nearby stores” on a product page, to open a search around you. Never stored on our servers.",
+    s1d:"<strong>Photos:</strong> only the photos you choose (profile picture, photo attached to a review) are uploaded.",
+    s1e:"<strong>Notifications:</strong> if you enable them, a device token is stored so we can deliver them. You can turn them off anytime in Profile → Notifications.",
+    s1f:"<strong>Content you create:</strong> your reviews, favourites, shared prices and added products are stored in your account.",
+    s2t:"How we use it",
+    s2a:"To authenticate your account and sync your data across your devices.",
+    s2b:"To display your reviews, favourites and community contributions.",
+    s2c:"We do <strong>not sell</strong> or rent your personal information, and we do <strong>no advertising profiling</strong>.",
+    s3t:"Third-party services",
+    s3a:"<strong>Supabase</strong> — authentication and encrypted data storage.",
+    s3b:"<strong>Apple &amp; Google Sign-In</strong> — optional login.",
+    s3c:"<strong>Open Food Facts / Open Beauty Facts / Open Products Facts, UPC Item DB, Icecat, Datakick</strong> — public product data.",
+    s3d:"<strong>Anthropic (Claude)</strong> — powers the AI assistant: questions you ask about a product are processed by this service, without being linked to your identity.",
+    s3e:"<strong>Amazon, Walmart, Best Buy, Costco</strong> — price links (some are affiliate links: you pay the same price, RateBase may earn a small commission).",
+    s4t:"Retention & deletion",
+    s4p:"You can use the app without an account. If you create one, you can delete your account and all associated data at any time via <strong>Profile → Delete account</strong>, or by emailing <a href=\"mailto:ratebase@outlook.com\">ratebase@outlook.com</a>. Deletion is permanent.",
+    s5t:"Children",
+    s5p:"RateBase is not directed to children under 13 and we do not knowingly collect information from them.",
+    s6t:"Changes & contact",
+    s6p:"This policy may be updated from time to time; the date at the top shows the latest revision. Questions? Email us at <a href=\"mailto:ratebase@outlook.com\">ratebase@outlook.com</a> — we reply within 24–48 hours.",
+    ft_home:"Home", ft_support:"Support",
+  },
+};
+const FR = {};
+document.querySelectorAll("[data-i18n]").forEach(el => { FR[el.dataset.i18n] = el.innerHTML; });
+I18N.fr = FR;
+let lang = (navigator.language || "fr").toLowerCase().startsWith("fr") ? "fr" : "en";
+function apply() {
+  document.documentElement.lang = lang;
+  document.getElementById("langBtn").textContent = lang === "fr" ? "EN" : "FR";
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const v = I18N[lang][el.dataset.i18n];
+    if (v != null) el.innerHTML = v;
+  });
+}
+function toggleLang() { lang = lang === "fr" ? "en" : "fr"; apply(); }
+apply();
+</script>
+</body>
+</html>
