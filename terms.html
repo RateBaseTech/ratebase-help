@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RateBase — Conditions d'utilisation</title>
+<meta name="description" content="Conditions d'utilisation de RateBase : règles du service, comptes, contenu, liens affiliés et responsabilité.">
+<style>
+  :root {
+    --blue:#2563EB; --teal:#06B6D4; --green:#22C55E; --green2:#16A34A;
+    --ink:#0F172A; --mid:#334155; --muted:#64748B; --bg:#F5F7FA; --card:#fff; --border:#E2E8F0;
+    --grad:linear-gradient(90deg,#1D4ED8,#2563EB,#06B6D4,#22C55E);
+  }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+  .wrap { max-width:780px; margin:0 auto; padding:0 22px; }
+  a { color:var(--blue); text-decoration:none; font-weight:600; }
+  a:hover { text-decoration:underline; }
+  nav { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.82); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--border); }
+  .nav-in { display:flex; align-items:center; justify-content:space-between; height:60px; }
+  .wordmark { font-size:22px; font-weight:800; letter-spacing:-.8px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .nav-links { display:flex; align-items:center; gap:20px; font-size:14px; font-weight:600; }
+  .nav-links a { color:var(--mid); text-decoration:none; }
+  .nav-links a:hover { color:var(--blue); }
+  .lang-btn { border:1px solid var(--border); background:#fff; border-radius:999px; padding:5px 13px; font-size:13px; font-weight:700; color:var(--mid); cursor:pointer; }
+  .lang-btn:hover { border-color:var(--blue); color:var(--blue); }
+  header.hero { position:relative; overflow:hidden; padding:56px 0 30px; text-align:center; }
+  header.hero::before { content:""; position:absolute; inset:-60% -20% auto; height:160%;
+    background:radial-gradient(500px 260px at 30% 30%, rgba(37,99,235,.12), transparent 65%),
+               radial-gradient(460px 260px at 72% 26%, rgba(34,197,94,.10), transparent 65%);
+    pointer-events:none; }
+  h1 { position:relative; font-size:clamp(28px,4.5vw,38px); letter-spacing:-1px; }
+  h1 .g { background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .updated { position:relative; display:inline-flex; align-items:center; gap:7px; background:#fff; border:1px solid var(--border); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600; color:var(--muted); margin-top:14px; box-shadow:0 2px 10px rgba(15,23,42,.05); }
+  .updated .dot { width:8px; height:8px; border-radius:50%; background:var(--green); }
+  .tldr { background:linear-gradient(120deg,#2563EB0D,#06B6D40D,#22C55E0D); border:1px solid #2563EB2A; border-radius:20px; padding:24px 26px; margin:26px 0 8px; }
+  .tldr h2 { font-size:16px; margin-bottom:10px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; display:inline-block; }
+  .tldr ul { padding-left:0; list-style:none; }
+  .tldr li { font-size:14.5px; color:var(--mid); padding:4px 0 4px 26px; position:relative; }
+  .tldr li::before { content:"✓"; position:absolute; left:2px; color:var(--green2); font-weight:800; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:24px 26px; margin:16px 0; box-shadow:0 4px 16px rgba(15,23,42,.05); }
+  .card h2 { display:flex; align-items:center; gap:11px; font-size:18px; margin-bottom:12px; }
+  .card h2 .ic { width:34px; height:34px; border-radius:11px; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+  p, li { font-size:15px; color:var(--mid); }
+  ul { padding-left:22px; }
+  li { margin:6px 0; }
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:36px 0 46px; }
+  footer .links { margin-bottom:8px; }
+  footer .links a { margin:0 10px; }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap nav-in">
+  <a href="index.html" style="text-decoration:none"><span class="wordmark">RateBase</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">Accueil</a>
+    <a href="privacy.html" data-i18n="nav_privacy">Confidentialité</a>
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1><span data-i18n="h1a">Conditions</span> <span class="g" data-i18n="h1b">d'utilisation</span></h1>
+  <span class="updated"><span class="dot"></span><span data-i18n="updated">Dernière mise à jour : juillet 2026</span></span>
+</div></header>
+
+<div class="wrap">
+
+  <div class="tldr">
+    <h2 data-i18n="tldr_t">L'essentiel en 30 secondes</h2>
+    <ul>
+      <li data-i18n="tldr1">RateBase est gratuit et t'aide à comparer prix et avis avant d'acheter.</li>
+      <li data-i18n="tldr2">Les prix et avis proviennent de sources publiques et de la communauté — vérifie toujours le prix final chez le marchand.</li>
+      <li data-i18n="tldr3">Sois respectueux dans tes avis : pas de contenu faux, haineux ou publicitaire.</li>
+      <li data-i18n="tldr4">Certains liens sont affiliés : tu paies le même prix, RateBase peut toucher une petite commission.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#2563EB14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span><span data-i18n="s1t">1. Acceptation des conditions</span></h2>
+    <p data-i18n="s1p">En téléchargeant ou en utilisant l'application RateBase, tu acceptes les présentes conditions. Si tu n'es pas d'accord, n'utilise pas l'application. RateBase est exploitée par Gabriel Dia (« RateBase », « nous »), Québec, Canada.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#06B6D414"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span><span data-i18n="s2t">2. Le service</span></h2>
+    <ul>
+      <li data-i18n="s2a">RateBase agrège des <strong>informations produits, prix et avis</strong> provenant de bases de données publiques (Open Food Facts, UPC Item DB, etc.), de marchands et de la communauté.</li>
+      <li data-i18n="s2b">Ces informations sont fournies <strong>à titre indicatif seulement</strong> : les prix changent constamment et nous ne garantissons ni leur exactitude, ni leur exhaustivité, ni leur actualité. Le prix affiché par le marchand au moment de l'achat fait foi.</li>
+      <li data-i18n="s2c">RateBase n'est pas un vendeur : les achats se font chez les marchands tiers, selon leurs propres conditions.</li>
+      <li data-i18n="s2d">Les résumés et réponses de l'assistant IA sont générés automatiquement et peuvent contenir des erreurs — ils ne constituent pas un conseil professionnel.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#22C55E14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><path d="M12 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span><span data-i18n="s3t">3. Comptes et contenu utilisateur</span></h2>
+    <ul>
+      <li data-i18n="s3a">Tu peux utiliser l'app sans compte; un compte est requis pour publier des avis, sauvegarder des favoris ou partager des prix.</li>
+      <li data-i18n="s3b">Tu es responsable de ton contenu (avis, photos, prix partagés). En le publiant, tu accordes à RateBase une licence non exclusive de l'afficher dans l'application.</li>
+      <li data-i18n="s3c"><strong>Interdits :</strong> contenu faux ou trompeur, diffamatoire, haineux, obscène, publicitaire, portant atteinte aux droits d'autrui, ou avis rémunérés/manipulés.</li>
+      <li data-i18n="s3d">Nous pouvons retirer tout contenu qui enfreint ces règles et suspendre les comptes en cas d'abus répété. Tu peux signaler un avis directement dans l'app.</li>
+      <li data-i18n="s3e">Tu peux supprimer ton compte à tout moment via <strong>Profil → Supprimer le compte</strong> — la suppression est définitive.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#F59E0B14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.2"/></svg></span><span data-i18n="s4t">4. Liens affiliés</span></h2>
+    <p data-i18n="s4p">Certains liens vers les marchands (notamment Amazon, dans le cadre du programme Amazon Associates) sont des <strong>liens affiliés</strong> : si tu achètes après avoir cliqué, RateBase peut recevoir une petite commission, <strong>sans aucun coût supplémentaire pour toi</strong>. Cela aide à garder l'application gratuite. Les placements commandités, lorsqu'il y en a, sont clairement étiquetés « Commandité » — les commissions et placements n'influencent jamais les avis ni les notes.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#7C3AED14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/></svg></span><span data-i18n="s5t">5. Propriété intellectuelle</span></h2>
+    <p data-i18n="s5p">L'application, son design, son logo et son code sont la propriété de RateBase. Les noms, marques et images de produits appartiennent à leurs propriétaires respectifs et sont affichés à des fins d'identification seulement. Les données produits ouvertes restent soumises aux licences de leurs sources (ex. Open Food Facts, licence ODbL).</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#EF444414"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span data-i18n="s6t">6. Limitation de responsabilité</span></h2>
+    <p data-i18n="s6p">L'application est fournie « telle quelle », sans garantie d'aucune sorte. Dans la mesure permise par la loi, RateBase ne peut être tenue responsable des décisions d'achat prises sur la base des informations affichées, des erreurs de prix ou de données provenant de tiers, ni des dommages indirects liés à l'utilisation de l'application. Certaines juridictions n'autorisent pas ces limitations : elles peuvent ne pas s'appliquer à toi.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="ic" style="background:#2563EB14"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4z"/></svg></span><span data-i18n="s7t">7. Modifications, droit applicable et contact</span></h2>
+    <p data-i18n="s7p">Nous pouvons mettre à jour ces conditions; la date en haut de page indique la dernière révision, et l'utilisation continue de l'app vaut acceptation. Les présentes conditions sont régies par les lois du Québec et du Canada. Des questions? Écris-nous à <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a> — réponse en 24 à 48 heures.</p>
+  </div>
+
+</div>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="index.html" data-i18n="ft_home">Accueil</a>
+    <a href="privacy.html" data-i18n="ft_privacy">Confidentialité</a>
+    <a href="mailto:ratebase@outlook.com">ratebase@outlook.com</a>
+  </div>
+  <div>© 2026 RateBase</div>
+</div></footer>
+
+<script>
+const I18N = {
+  en: {
+    nav_home:"Home", nav_privacy:"Privacy",
+    h1a:"Terms of", h1b:"Use",
+    updated:"Last updated: July 2026",
+    tldr_t:"The 30-second summary",
+    tldr1:"RateBase is free and helps you compare prices and reviews before you buy.",
+    tldr2:"Prices and reviews come from public sources and the community — always check the final price with the merchant.",
+    tldr3:"Be respectful in your reviews: no false, hateful or promotional content.",
+    tldr4:"Some links are affiliate links: you pay the same price, RateBase may earn a small commission.",
+    s1t:"1. Acceptance of the terms",
+    s1p:"By downloading or using the RateBase app, you agree to these terms. If you do not agree, do not use the app. RateBase is operated by Gabriel Dia (\"RateBase\", \"we\"), Québec, Canada.",
+    s2t:"2. The service",
+    s2a:"RateBase aggregates <strong>product information, prices and reviews</strong> from public databases (Open Food Facts, UPC Item DB, etc.), merchants and the community.",
+    s2b:"This information is provided <strong>for reference only</strong>: prices change constantly and we do not guarantee their accuracy, completeness or timeliness. The price shown by the merchant at checkout prevails.",
+    s2c:"RateBase is not a seller: purchases are made with third-party merchants, under their own terms.",
+    s2d:"AI assistant summaries and answers are generated automatically and may contain errors — they are not professional advice.",
+    s3t:"3. Accounts & user content",
+    s3a:"You can use the app without an account; an account is required to post reviews, save favourites or share prices.",
+    s3b:"You are responsible for your content (reviews, photos, shared prices). By posting it, you grant RateBase a non-exclusive licence to display it in the app.",
+    s3c:"<strong>Not allowed:</strong> false or misleading, defamatory, hateful, obscene or promotional content, content infringing others' rights, or paid/manipulated reviews.",
+    s3d:"We may remove content that breaks these rules and suspend accounts for repeated abuse. You can report a review directly in the app.",
+    s3e:"You can delete your account at any time via <strong>Profile → Delete account</strong> — deletion is permanent.",
+    s4t:"4. Affiliate links",
+    s4p:"Some merchant links (notably Amazon, under the Amazon Associates program) are <strong>affiliate links</strong>: if you buy after tapping, RateBase may receive a small commission, <strong>at no extra cost to you</strong>. This helps keep the app free. Sponsored placements, when present, are clearly labelled \"Sponsored\" — commissions and placements never influence reviews or ratings.",
+    s5t:"5. Intellectual property",
+    s5p:"The app, its design, logo and code are the property of RateBase. Product names, brands and images belong to their respective owners and are shown for identification purposes only. Open product data remains subject to its source licences (e.g. Open Food Facts, ODbL licence).",
+    s6t:"6. Limitation of liability",
+    s6p:"The app is provided \"as is\", without warranty of any kind. To the extent permitted by law, RateBase cannot be held liable for purchase decisions based on the information displayed, for price or data errors from third parties, or for indirect damages related to use of the app. Some jurisdictions do not allow these limitations: they may not apply to you.",
+    s7t:"7. Changes, governing law & contact",
+    s7p:"We may update these terms; the date at the top shows the latest revision, and continued use of the app constitutes acceptance. These terms are governed by the laws of Québec and Canada. Questions? Email us at <a href=\"mailto:ratebase@outlook.com\">ratebase@outlook.com</a> — we reply within 24–48 hours.",
+    ft_home:"Home", ft_privacy:"Privacy",
+  },
+};
+const FR = {};
+document.querySelectorAll("[data-i18n]").forEach(el => { FR[el.dataset.i18n] = el.innerHTML; });
+I18N.fr = FR;
+let lang = (navigator.language || "fr").toLowerCase().startsWith("fr") ? "fr" : "en";
+function apply() {
+  document.documentElement.lang = lang;
+  document.getElementById("langBtn").textContent = lang === "fr" ? "EN" : "FR";
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const v = I18N[lang][el.dataset.i18n];
+    if (v != null) el.innerHTML = v;
+  });
+}
+function toggleLang() { lang = lang === "fr" ? "en" : "fr"; apply(); }
+apply();
+</script>
+</body>
+</html>
