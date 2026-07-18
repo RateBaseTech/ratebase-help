@@ -134,7 +134,7 @@
   </div>
 
   <div class="phone-col"><div class="phone"><div class="screen">
-    <img src="img/app-home.jpg" alt="L'accueil de l'app RateBase : recherche, meilleurs deals et produits populaires" width="900" height="1957" loading="eager">
+    <img id="appShot" src="img/app-home.jpg" alt="L'accueil de l'app RateBase : recherche, meilleurs deals et produits populaires" width="900" height="1957" loading="eager">
   </div></div></div>
 </div></header>
 
@@ -253,6 +253,14 @@ function apply() {
     const v = I18N[lang][el.dataset.i18n];
     if (v != null) el.innerHTML = v;
   });
+  // La capture d'écran de l'app suit la langue du site
+  const shot = document.getElementById("appShot");
+  if (shot) {
+    shot.src = lang === "fr" ? "img/app-home.jpg" : "img/app-home-en.jpg";
+    shot.alt = lang === "fr"
+      ? "L'accueil de l'app RateBase : recherche, meilleurs deals et produits populaires"
+      : "The RateBase app home screen: search, best deals and popular products";
+  }
 }
 function toggleLang() { lang = lang === "fr" ? "en" : "fr"; apply(); }
 apply();
