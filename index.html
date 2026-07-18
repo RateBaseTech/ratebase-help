@@ -49,38 +49,11 @@
   .appstore b { font-size:17px; font-weight:700; line-height:1.15; }
   .free-note { font-size:13px; color:var(--muted); font-weight:600; }
 
-  /* ── Phone mockup (pur CSS) ──────────── */
+  /* ── Phone (vraie capture d'écran de l'app) ── */
   .phone-col { flex:0 1 340px; margin:0 auto; }
   .phone { width:300px; margin:0 auto; background:#0F172A; border-radius:44px; padding:12px; box-shadow:0 24px 60px rgba(15,23,42,.28), 0 4px 14px rgba(15,23,42,.18); }
-  .screen { background:var(--bg); border-radius:34px; overflow:hidden; padding:18px 13px 14px; }
-  .notch { width:96px; height:22px; background:#0F172A; border-radius:0 0 14px 14px; margin:-18px auto 10px; }
-  .scr-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:11px; }
-  .scr-pill { font-size:9px; font-weight:700; color:var(--muted); background:#fff; border:1px solid var(--border); border-radius:999px; padding:3px 8px; }
-  .scr-logo { font-size:15px; font-weight:800; letter-spacing:-.5px; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
-  .scr-search { display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--border); border-radius:13px; padding:9px 11px; font-size:11px; color:var(--muted); box-shadow:0 2px 8px rgba(15,23,42,.05); }
-  .scr-scan { margin-left:auto; width:24px; height:24px; border-radius:8px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:flex; align-items:center; justify-content:center; }
-  .scr-sec { display:flex; align-items:center; gap:5px; font-size:10.5px; font-weight:800; margin:12px 1px 7px; }
-  .scr-sec .zap { color:var(--green2); }
-  .deal-rail { display:flex; gap:8px; }
-  .deal-c { flex:1; background:#fff; border:1px solid var(--border); border-radius:13px; overflow:hidden; box-shadow:0 2px 8px rgba(15,23,42,.05); }
-  .deal-img { height:44px; display:flex; align-items:center; justify-content:center; font-size:19px; position:relative; }
-  .deal-off { position:absolute; top:4px; left:4px; background:#DC2626; color:#fff; font-size:7px; font-weight:800; border-radius:5px; padding:1px 4px; }
-  .deal-b { padding:6px 8px 8px; }
-  .deal-n { font-size:8.5px; font-weight:600; color:var(--ink); }
-  .deal-p { font-size:10px; font-weight:800; color:var(--green2); margin-top:2px; }
-  .deal-p s { color:var(--muted); font-weight:500; font-size:8px; margin-left:3px; }
-  .prod-grid { display:flex; gap:8px; }
-  .prod-c { flex:1; background:#fff; border:1px solid var(--border); border-radius:13px; overflow:hidden; box-shadow:0 2px 8px rgba(15,23,42,.05); border-left:3px solid var(--teal); }
-  .prod-c:last-child { border-left-color:#F97316; }
-  .prod-img { height:40px; display:flex; align-items:center; justify-content:center; font-size:17px; background:#fff; }
-  .prod-b { padding:5px 8px 8px; }
-  .prod-n { font-size:8.5px; font-weight:600; }
-  .stars { color:transparent; font-size:9px; letter-spacing:1px; background:var(--grad); -webkit-background-clip:text; background-clip:text; }
-  .prod-p { font-size:9.5px; font-weight:800; color:var(--ink); margin-top:1px; }
-  .scr-nav { display:flex; justify-content:space-around; align-items:center; background:#fff; border:1px solid var(--border); border-radius:16px; margin-top:12px; padding:7px 4px 6px; }
-  .scr-nav span { font-size:12px; opacity:.45; }
-  .scr-nav .on { opacity:1; }
-  .scr-nav .fab { width:26px; height:26px; margin-top:-16px; border-radius:50%; background:linear-gradient(135deg,#4ADE80,#16A34A); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:14px; opacity:1; box-shadow:0 4px 10px rgba(22,163,74,.4); }
+  .screen { border-radius:34px; overflow:hidden; background:var(--bg); }
+  .screen img { display:block; width:100%; height:auto; }
 
   /* ── Stats strip ─────────────────────── */
   .stats { display:flex; gap:14px; flex-wrap:wrap; margin:34px 0 8px; }
@@ -161,20 +134,7 @@
   </div>
 
   <div class="phone-col"><div class="phone"><div class="screen">
-    <div class="notch"></div>
-    <div class="scr-head"><span class="scr-pill">FR ▾</span><span class="scr-logo">RateBase</span><span class="scr-pill">CAD ▾</span></div>
-    <div class="scr-search">🔍 <span data-i18n="scr_search">Chercher un produit…</span><span class="scr-scan"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg></span></div>
-    <div class="scr-sec"><span class="zap">⚡</span><span data-i18n="scr_deals">Meilleurs deals</span></div>
-    <div class="deal-rail">
-      <div class="deal-c"><div class="deal-img">⌚<span class="deal-off">−20%</span></div><div class="deal-b"><div class="deal-n" data-i18n="scr_d1">Montre automatique</div><div class="deal-p">159,86$<s>199,99$</s></div></div></div>
-      <div class="deal-c"><div class="deal-img">🎧</div><div class="deal-b"><div class="deal-n" data-i18n="scr_d2">Écouteurs sans fil</div><div class="deal-p">24,99$</div></div></div>
-    </div>
-    <div class="scr-sec"><span data-i18n="scr_pop">Populaires</span></div>
-    <div class="prod-grid">
-      <div class="prod-c"><div class="prod-img">🧴</div><div class="prod-b"><div class="prod-n" data-i18n="scr_p1">Crème hydratante</div><div class="stars">✦✦✦✦✦</div><div class="prod-p">18,97 $</div></div></div>
-      <div class="prod-c"><div class="prod-img">☕</div><div class="prod-b"><div class="prod-n" data-i18n="scr_p2">Café en grains</div><div class="stars">✦✦✦✦✦</div><div class="prod-p">13,49 $</div></div></div>
-    </div>
-    <div class="scr-nav"><span class="on">🏠</span><span>⚡</span><span class="fab">+</span><span>🔖</span><span>👤</span></div>
+    <img src="img/app-home.jpg" alt="L'accueil de l'app RateBase : recherche, meilleurs deals et produits populaires" width="900" height="1957" loading="eager">
   </div></div></div>
 </div></header>
 
@@ -257,8 +217,6 @@ const I18N = {
     sub:"RateBase brings together reviews from multiple sources and compares prices across major Canadian retailers — with one barcode scan. Free, no intrusive ads.",
     badge_small:"Download on the", badge_small2:"Download on the", free:"100% free",
     stat1:"product data sources", stat2:"languages — FR · EN · ES", stat3:"hand-picked deals",
-    scr_search:"Search a product…", scr_deals:"Best deals", scr_pop:"Popular",
-    scr_d1:"Automatic watch", scr_d2:"Wireless earbuds", scr_p1:"Moisturizing cream", scr_p2:"Coffee beans",
     feat_kick:"Features", feat_title:"Everything you need to shop smart",
     feat_sub:"One gesture — scan or search — and RateBase gathers information scattered across dozens of sites.",
     f1t:"Barcode scanner", f1p:"Point your camera at any product: its full profile appears in a second.",
